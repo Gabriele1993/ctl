@@ -49,9 +49,9 @@ function fedpov(house,income,percentage){
 
 
 
-Q(1): Do they have the financial ability at the time of this request for representation to secure competent legal representation and to provide other necessary expenses of legal representation?
+Q(1): Do you have the financial ability at the time of this request for representation to secure competent legal representation and to provide other necessary expenses of legal representation?
 A: Yes
-	Q(1.1): Then this QnA is not for them, they are likely not indigent defendants in Connecticut. Thank you, come again. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
+	Q(1.1): Then this QnA is not for you, you are likely not an indigent defendant in Connecticut. Thank you, come again. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
 
 
 A: No.
