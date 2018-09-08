@@ -1,0 +1,75 @@
+Title: Connecticut Indigency Calculator
+
+Author: [Gabriele Ferrigno]
+Before:<link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;"> Connecticut Indigency Calculator</h2>
+<p><b>This is a <a href="http://www.codingthelaw.org/">class project</a>. You should not rely on it as a source of legal information. It is likely incomplete.</b></p>
+<p>Answer the following questions to see if someone qualifies for appointment of counsel.</p>
+
+
+
+<script>
+function fedpov(house,income,percentage){
+	// Determines if your income is less than or equal to 
+	// a percentage of the 2018 federal poverty guidelines 
+	// for the contiguous United States. See
+	// https://www.federalregister.gov/documents/2018/01/18/2018-00814/annual-update-of-the-hhs-poverty-guidelines
+	
+		var line = NaN;
+	
+		if (house == 1) {
+			line = 12140;
+		} else if (house == 2) {
+			line = 16460;
+		} else if (house == 3) {
+			line = 20780;
+		} else if (house == 4) {
+			line = 25100;
+		} else if (house == 5) {
+			line = 29420;
+		} else if (house == 6) {
+			line = 33740;
+		} else if (house == 7) {
+			line = 38060;
+		} else if (house == 8) {
+			line = 42380;
+		} else if (house > 8) {
+			line = 42380 + (house-8)*4320;
+		}
+	
+		if (income <= (line*(percentage/100))) {
+			return true;
+		} else {
+			return false;
+		}
+	}	
+</script>	
+
+
+
+
+Q(1): Do they have the financial ability at the time of this request for representation to secure competent legal representation and to provide other necessary expenses of legal representation?
+A: Yes
+	Q(1.1): Then this QnA is not for them, they are likely not indigent defendants in Connecticut. Thank you, come again. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
+
+
+A: No.
+	Q(house): How many people are in your household?
+	X:number
+		Q(income): How much income does your household bring in per year in after tax dollars?
+		X:number
+			Q(1.2.1.1): Are you charged with a misdemeanor or a felony?
+			A[javascript:if (fedpov(getvar('house'),getvar('income'),150)){ goto('qualciv') } else { goto('qualbut') } ]: Misdemeanor 
+			A[javascript:if (fedpov(getvar('house'),getvar('income'),200)){ goto('qualcrim') } else { goto('noqualciv') } ]: Felony
+
+
+
+
+Q(qualciv): You probably qualify as indigent since you earn less than 150% of the poverty line. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
+Q(qualbut): You probably won't qualify as indigent since you earn more than 150% of the poverty line. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
+
+
+
+Q(qualcrim): You probably qualify as indigent since you earn less than 200% of the poverty line. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
+Q(noqualciv): You probably won't qualify as indigent since you earn more than 200% of the poverty line. For more information see <a href="https://www.cga.ct.gov/2017/pub/chap_887.htm" target=_new>CHAPTER 887 PUBLIC DEFENDER SERVICES</a>. 
