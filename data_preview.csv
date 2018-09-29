@@ -1,0 +1,5 @@
+people = pd.read_csv('people.csv') 
+calls = pd.read_csv('calls.csv') 
+
+display(people.head())
+display(calls.head())
