@@ -1,7 +1,0 @@
-people = pd.read_csv('people.csv') 
-calls = pd.read_csv('calls.csv') 
-
-display(people.head())
-display(calls.head())
-
-processed_table.to_csv("processed_table_only_numbers.csv", index_label=False)

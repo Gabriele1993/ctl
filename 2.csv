@@ -1,0 +1,28 @@
+people = pd.read_csv('people.csv') 
+calls = pd.read_csv('calls.csv') 
+
+display(people.head())
+display(calls.head())
+
+
+single_table = people.merge(calls) 
+print ("row count:",len(single_table))
+single_table.head()
+
+
+
+
+people_comp = pd.read_csv('z_people.csv') 
+calls_comp = pd.read_csv('z_calls.csv') 
+
+display(people_comp.head())
+display(calls_comp.head())
+
+single_table = people_comp.merge(calls_comp) 
+print ("row count:",len(single_table))
+single_table.head()
+
+
+
+
+
