@@ -1,6 +1,22 @@
 Q(1): Are you a tenant, who is looking to have her/his security deposit returned from a landlord?
 
 A: Yes
+	Q(1st): Did your landlord not put your money in a bank account that is separate, which is protected from creditors and separate from your money?
+	A: Yes
+		Q(2nd): Did your landlord give you  a receipt within 30 days of receiving my security deposit with the amount of the security deposit, the name and address of the bank where it is being held, and the bank account number. 
+
+
+
+	A: No
+		Q(1.1.2):GOTO:2nd
+
+
+
+
+
+
+
 
 
 A: No
+	Q(Notforyou): Then this questionnaire is not for you. Thank you. 
