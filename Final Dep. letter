@@ -1,5 +1,10 @@
+<input type="hidden" name="name" value="Deposit"/>
+<input type="hidden" name="docx_uri" value="https://gabriele1993.github.io/deposit.docx"/>
+
+
+
 Q(1): Are you a tenant who is looking to have your security deposit returned from your landlord?
-A:[javascript:save2('mailmerge.csv',csv())]Yes
+A:Yes
 	Q(1st): Did your landlord not put your money in a bank account that is separate, which is protected from creditors and separate from your money?
 	A: Yes
 		Q(2nd): Did your landlord give you a receipt within 30 days of receiving your security deposit? (With the amount of the security deposit, the name and address of the bank where it is being held, and the bank account number) 
@@ -9,7 +14,7 @@ A:[javascript:save2('mailmerge.csv',csv())]Yes
 				Q(4th): Did your landlord ask you to give up your security deposit rights?
 				A:Yes
 					Q(5th): Did your landlord fail to transfer the security deposit to the new owner?
-					A:Yes
+					A:[javascript:submit2('http://colarusso.pythonanywhere.com/','GET','','','','json_doc','_blank')]Yes
 
 
 
