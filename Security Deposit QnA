@@ -1,5 +1,5 @@
-<input type="hidden" name="name" value="Deposit"/>
-<input type="hidden" name="docx_uri" value="https://gabriele1993.github.io/ctl/deposit"/>
+<input type="hidden" name="name" value="deposit.docx"/>
+<input type="hidden" name="docx_uri" value="https://gabriele1993.github.io/ctl/deposit.docx"/>
 
 
 
