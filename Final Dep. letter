@@ -6,15 +6,15 @@
 Q(1): Are you a tenant who is looking to have your security deposit returned from your landlord?
 A:Yes
 	Q(1st): Did your landlord not put your money in a bank account that is separate, which is protected from creditors and separate from your money?
-	A(Did not put my money in a bank account separate which is protected from creditors and separate from your money.*): Yes
+	A(X): Yes
 		Q(2nd): Did your landlord give you a receipt within 30 days of receiving your security deposit? (With the amount of the security deposit, the name and address of the bank where it is being held, and the bank account number) 
 		A(X): Yes
 			Q(3rd): Did your landlord not allow you to inspect the security deposit records? 
-			A:Yes
+			A(X):Yes
 				Q(4th): Did your landlord ask you to give up your security deposit rights?
-				A:Yes
+				A(X):Yes
 					Q(5th): Did your landlord fail to transfer the security deposit to the new owner?
-					A:[javascript:submit2('http://colarusso.pythonanywhere.com/','GET','','','','json_doc','_blank')]Yes
+					A(X):[javascript:submit2('http://colarusso.pythonanywhere.com/','GET','','','','json_doc','_blank')]Yes
 
 
 
@@ -22,11 +22,11 @@ A:Yes
 
 
 
-					A:No
+					A( ):No
 						Q(1.1.1.1.1.1.2):GOTO:Notforyou
-				A:No
+				A( ):No
 					Q(1.1.1.1.1.2):GOTO:5th
-			A:No
+			A( ):No
 				Q(1.1.1.1.2):GOTO:4th
 		A( ): No
 			Q(1.1.1.2):GOTO:3rd
@@ -34,6 +34,5 @@ A:Yes
 		Q(1.1.2):GOTO:2nd
 
 
-
 A: No
-	Q(Notforyou): This questionnaire does not apply to you. Thank you. 
+	Q(Notforyou): This questionnaire does not apply to you. Thank you.
