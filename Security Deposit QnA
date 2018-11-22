@@ -2,7 +2,6 @@
 <input type="hidden" name="docx_uri" value="https://gabriele1993.github.io/ctl/deposit.docx"/>
 
 
-
 Q(1): Are you a tenant who is looking to have your security deposit returned from your landlord?
 A:Yes
 	Q(1st): Did your landlord not put your money in a bank account that is separate, which is protected from creditors and separate from your money?
@@ -14,7 +13,9 @@ A:Yes
 				Q(4th): Did your landlord ask you to give up your security deposit rights?
 				A(X):Yes
 					Q(5th): Did your landlord fail to transfer the security deposit to the new owner?
-					A(X):[javascript:submit2('http://colarusso.pythonanywhere.com/','GET','','','','json_doc','_blank')]Yes
+					A(X):[javascript:submit2('http://colarusso.pythonanywhere.com/','GET','','','','json_doc','_blank')] Yes
+
+
 
 
 					A( ):No
